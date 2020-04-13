@@ -1,0 +1,224 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+#map{
+    width:100%;
+    height:100%;
+}
+
+.title{
+    position: absolute;
+    z-index: 100;
+    font-size: 48px;
+    font-weight: bold;
+    color:#000000;
+    text-transform: uppercase;
+    top: 100px;
+    left: 100px;
+}
+
+
+.search-container{
+    border-radius: 30px;
+    position: absolute;
+    z-index: 100;
+    top: 160px;
+    left: 100px;
+    width: 300px;
+    height: 40px;
+    background-color: #454E53;
+    display: flex;
+}
+
+
+
+.search-container input{
+    width: 250px;
+    font-size: 25px;
+    background-color: transparent;
+    border: none;
+    color: white;
+}
+
+.search{
+    padding: 10px;
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+}
+
+.search-container input:focus{
+    outline: none;
+}
+
+.search i{
+    font-size: 25px;
+    color: white;
+}
+
+
+.stores-list-container{
+    width:300px;
+    position:absolute;
+    z-index:100;
+    background:#708090;
+    left:100px;
+    top:220px;
+    border-radius:30px;
+    bottom:20px;
+    display:flex;
+    overflow-y: hidden;
+    padding-bottom: 30px;
+}
+
+.store-container{
+    border-bottom: 1px solid #979797;
+    display: flex;
+    cursor: pointer;
+}
+
+.store-info-container{
+    flex-grow: 1;
+}
+
+.store-number-container{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.store-address{
+    font-size: 20px;
+    color: #000000;
+    margin-top: 30px;
+    font-weight: bold;
+}
+
+.store-province{
+    color: #2E8B57;
+    margin-top: 12px;
+    margin-bottom: 15px;
+    font-weight: 800;
+}
+
+.store-Zone{
+    color: red;
+    margin-top: 12px;
+    margin-bottom: 15px;
+    font-weight: 500;
+}
+
+
+.store-address span{
+    display: block;
+}
+
+.store-number{
+    width: 30px;
+    height:30px;
+    display:flex;
+    align-items:center;
+    justify-content: center;
+    background-color: #454E53;
+    color: #B5ADAD;
+    border-radius: 50%;
+    font-size:12px;
+
+}
+
+.stores-list{
+    flex-grow:1;
+    overflow-y:scroll;
+    padding-left:20px;
+    padding-right:20px;
+    
+}
+
+.store-info-window{
+    min-width: 300px;
+    font-size: 18px;
+    padding: 8px;
+    background-color: #98b4bd;
+   
+}
+
+.store-info-name{
+    font-size: 24px;
+    font-weight: bold;
+    color: rgba(0,0,0,.87);
+   
+}
+
+.store-info-totalpepole{
+    margin-top: 6px;
+    border-bottom:1px solid #00000029;
+    padding-bottom: 6px;
+    font-weight: 500;
+}
+
+.store-info-activecases , .store-info-recoveredcases, .store-info-deaths{
+     margin-top: 8px;
+     display: flex;
+     align-items: center;
+     font-size: 16px;
+     font-style: oblique;
+     font-weight: bold;
+}
+
+.store-info-activecases .circle {
+    width: 30px;
+    height: 30px;
+    background-color: rgb(243, 120, 75);
+    color: white;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    margin-right: 8px;
+}
+
+.store-info-recoveredcases .circle{
+    width: 30px;
+    height: 30px;
+    background-color: green;
+    color: white;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    margin-right: 8px;
+}
+
+.store-info-deaths .circle{
+    width: 30px;
+    height: 30px;
+    background-color: red;
+    color: white;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    margin-right: 8px;
+}
+
+.search i{
+    cursor: pointer;
+}
+
+.store-container-background{
+    display: flex;
+    flex-grow: 1;
+    border-radius: 18px;
+    padding-left: 8px;
+    padding-right: 8px;
+    margin-bottom: 12px;
+    margin-top: 12px;
+    transition: all 0.2s ease-in-out;
+    background-color: #ccc;
+}
+
